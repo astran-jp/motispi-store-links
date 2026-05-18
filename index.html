@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base target="_top">
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            if ((navigator.userAgent.toLowerCase().indexOf("android") > -1)) {
+                // TODO: Android版の実際のパッケージ名に合わせて変更してください
+                window.location.href = 'https://play.google.com/store/apps/details?id=jp.astran.motispi_prod';
+            } else {
+                // TODO: iOS版の実際のApp IDに変更してください
+                window.location.href = 'https://apps.apple.com/ja/app/idXXXXXXXXX';
+            }
+        });
+    </script>
+</body>
+</html>
